@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/goods_list.css">
+    <script src="../js/jquery-3.0.0.js"></script>
+    <script src="../js/goods_list.js"></script>
+    <script id="get_rows" type="text/html">//也可以用这个(x-tmpl-mustache)替换(text/html)
+        <tr>
+            <td>type</td>
+            <td>name</td>
+            <td>price</td>
+            <td>unit</td>
+            <td><button class='button_style' id="id_number">加入购物车</button></td>
+        </tr>
+    </script>
+</head>
+<body>
+<div>
+    <div class="button_title">
+        <button class="button" id="lets_label">Let's Go</button>
+        <button class="button" id="index">主页</button>
+        <button class="button goods_list_label_color" >商品列表</button>
+    </div>
+    <div class="shopping_cart_label">
+        <button class="button" id="shopping"><img src="../99.png" class="img" />购物车(<span id="shopping_cart_num"></span>)</button>
+    </div>
+</div>
+<div class="main">
+    <div class="title_style">
+        <p class="title">商品列表</p>
+    </div>
+    <div class="title_bottom">
+        <table>
+            <tr class="attribute_height">
+                <th class="table_th">分类</th>
+                <th class="table_th">名称</th>
+                <th class="table_th">单价(元)</th>
+                <th class="table_th_unit">单位</th>
+                <th class="table_th_button">  </th>
+            </tr>
+            <tbody id="table_body">
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>

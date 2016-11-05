@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 1300px;
+}
+.button_title {
+    background-color:#1E1E1E;
+    height:50px;
+    padding-left: 65px;
+    float:left;
+    width:80%;
+}
+.button{
+    color:#9E9B9B;/*背景外面的颜色*/
+    background-color:#1E1E1E;/*背景颜色*/
+    height:50px;
+    top:0;
+    border:0;
+    padding:0 15px;
+    font-size: 100%;
+}
+.index_label_color{
+    color:#FFFFFF;
+    background-color:black;
+}
+.shopping_cart_label{
+    background-color:#1E1E1E;
+    height:50px;
+}
+.img{
+    height:25px;
+    width: 25px;
+    vertical-align: middle;/*图片垂直居中*/
+}
+.main {
+    margin: 30px 5% ;
+    padding: 5% 4% ;/*顺序　上　右　下　左*/
+    background-color:#E4E0E0;
+}
+.title{
+    margin-bottom:10px;
+    margin-top: 0;
+    font-size: 78px;
+    width:100%;
+    font-weight: 900;
+    font-family: monospace;
+}
+.text{
+    margin-bottom:20px;
+    margin-top: 10px;
+    font-size: 155%;
+    line-height: 139%;
+
+}
+.button_style{
+    background-color:#0477CA;
+    color:	#FFFFFF;
+    border-radius: 7px;
+    font-size: 20px;
+    width:100px;
+    height:50px;
+    border:0;
+}

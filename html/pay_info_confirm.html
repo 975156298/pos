@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/pay_info_confirm.css">
+    <script src="../js/jquery-3.0.0.js"></script>
+    <script src="../js/lodash.js"></script>
+    <script src="../js/pay_info_confirm.js"></script>
+    <script id="td_row_template" type="text/html">
+        <tr>
+            <td>type</td>
+            <td>name</td>
+            <td>price</td>
+            <td>unit</td>
+            <td>num</td>
+            <td><div id="subtotal_id"></div></td>
+        </tr>
+    </script>
+    <script id="td_discount_info" type="text/html">
+        <tr>
+            <td>type</td>
+            <td>name</td>
+            <td>number</td>
+        </tr>
+    </script>
+</head>
+<body>
+<div>
+    <div class="button_title">
+        <button class="button" id="lets_label">Let's Go</button>
+        <button class="button" id="index">主页</button>
+        <button class="button" id="goods_list">商品列表</button>
+    </div>
+    <div class="shopping_cart_label">
+        <button class="button" id="shopping"><img src="../99.png" class="img" />购物车(<div id="shopping_cart_num"></div>)</button>
+    </div>
+</div>
+<div class="main">
+    <div class="title_style">
+        <p class="title">购物清单</p>
+    </div>
+    <div class="title_bottom">
+        <div id="time"></div>
+        <table>
+            <tr class="attribute_height">
+                <th class="th_small_box">分类</th>
+                <th class="th_centre_box">名称</th>
+                <th class="th_centre_box">单价(元)</th>
+                <th class="th_small_box">单位</th>
+                <th class="th_smal_boxl">数量</th>
+                <th class="th_big_box">小计</th>
+            </tr>
+            <tbody id="table_body">
+            </tbody>
+            </tr>
+        </table>
+    </div>
+    <div class="title_style">
+        <p class="title">赠送商品</p>
+    </div>
+    <div class="title_bottom">
+        <table>
+            <tr class="attribute_height">
+                <th class="th_discount_small_box">分类</th>
+                <th class="th_discount_big_box">名称</th>
+                <th class="th_discount_small_box">数量</th>
+            </tr>
+            <tbody id="discount_table">
+            </tbody>
+        </table>
+    </div>
+    <p class="total_style">总计:<span id="total"></span>元</p>
+    <p class="discount_style">节省:<span id="discount"></span>元</p>
+    <button id="confirm">确认</button>
+</div>
+</body>
+</html>
